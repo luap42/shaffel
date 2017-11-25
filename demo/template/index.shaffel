@@ -1,0 +1,26 @@
+[@master "layout.shaffel"]
+[@extend "content"]
+
+    [@each($list -> $item)]
+        <h3>[$item.name|html+italic]</h3>
+        <dl>
+            <dt>hello</dt>
+            <dd>[$item.hello]</dd>
+            <dt>bye</dt>
+            <dd>[$item.bye]</dd>
+        </dl>
+    [/@each]
+
+    <h1>[$list.de.hello]</h1>
+
+    <p>[@if($x == "1")]
+    X is 1
+    [@elseif($x == "2")]
+    X is 2
+    [@elseif($x == 3)]
+    X is 3
+    [@else]
+    X is something else
+    [/@if]</p>    
+
+[/@extend]

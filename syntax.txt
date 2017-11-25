@@ -1,0 +1,16 @@
+[$variable]
+[$variable|filter]
+    filter = {"html","url"}
+[@master "filename"]
+[@area "name"]
+[@extend "name"]
+
+[@if(condition...)]
+[@elseif(condition...)]
+[@else]
+[@endif]
+
+[@each($list -> $item)]
+[@endeach]
+
+[[pluginname key=value]]
